@@ -1,2 +1,61 @@
+# Dataset directories (large files)
 dataset/
 yolo_dataset/
+
+# Model weights and checkpoints
+*.pth
+*.pt
+yolov8n.pt
+
+# Training outputs and runs
+runs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Temporary and upload files
+static/uploads/
+yolo/static/uploads/
+uploads/
+*.tmp
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS specific
+Thumbs.db
+.env
+.env.local
