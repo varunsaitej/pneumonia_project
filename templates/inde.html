@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pneumonia Detection</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        .upload-box {
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        input[type="file"] {
+            margin: 15px 0;
+        }
+
+        button {
+            background: #1e3c72;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #163060;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🩺 Pneumonia Detection System</h1>
+    <p>Upload a Chest X-ray to detect Pneumonia using AI</p>
+
+    <div class="upload-box">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required><br>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    Built with CNN + YOLO + Flask
+</div>
+
+</body>
+</html>
