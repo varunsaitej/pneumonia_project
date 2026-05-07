@@ -1,6 +1,7 @@
 # Dataset directories (large files)
 dataset/
 yolo_dataset/
+yolo/ 
 
 # Model weights and checkpoints
 *.pth
