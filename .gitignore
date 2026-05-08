@@ -1,12 +1,10 @@
 # Dataset directories (large files)
 dataset/
 yolo_dataset/
-yolo/ 
-
+.idea/
 # Model weights and checkpoints
 *.pth
 *.pt
-yolov8n.pt
 
 # Training outputs and runs
 runs/
@@ -19,7 +17,7 @@ __pycache__/
 .Python
 
 # Virtual environment
-venv/
+.venv/
 env/
 ENV/
 build/

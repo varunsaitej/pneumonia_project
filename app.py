@@ -20,7 +20,7 @@ model = PneumoniaCNN()
 model.load_state_dict(torch.load("cnn_model.pth", map_location=device))
 model.eval()
 
-# Transform
+# Transformpy
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor()
